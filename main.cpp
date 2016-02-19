@@ -91,10 +91,6 @@ int main(int argc, char *argv[]) {
             }
         }
 
-            database = "/Users/joachim/raspi/cddb.sqlite";
-        //    importfile = "/Users/joachim/Downloads/freedb-complete-20160101.tar.bz2";
-        //    updatefile = "/Users/joachim/Downloads/freedb-update-20160101-20160201.tar.bz2";
-
         if (!importfile.empty()) {
 
             // create the CDDB updater object

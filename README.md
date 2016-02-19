@@ -23,14 +23,14 @@ CppCDDB therefore does not use the original discid, but an own, private value, b
 Both indexes respond in microseconds, even on a Raspberry.
 
 ###Supported Operating Systems
-CppCDDB is written in standard C++14. Basically all platforms with a compiler for that standard could run it. It includes support for big (e.g. ARM) and low endian (386) systems.
+CppCDDB is written in standard C++14. Basically all platforms with a compiler for that standard could run it. It adapts automatically to big (e.g. ARM) and little endian (386) systems.
 
 You need sqlite3 and libbz2 on your platform. For Windows this means that you need to get them yourself, on other systems they are either preinstalled or configurable by the respective package manager.
 
 CppCDDB is currently tested on OSX and Debian Linux, on a Mac and a Raspberry Pi.
 
 ###Used Third-Party software
-CppCDDB uses [SQLite3](http://sqlite.org) and [bzip2](http://www.bzip.org). It also uses the formidable C++ string formatting library [CppFormat](http://cppformat.github.io/latest/index.html) from Victor Zverovich. For networking, (Boost::)[ASIO](http://think-async.com/Asio/) is used (as standalone headers, Boost is not needed). And it uses Sebastien Rombauts's nice [SQLiteCpp](https://github.com/SRombauts/SQLiteCpp) C++ wrapper classes for SQLite - which helped to reduce greatly the implementation time for this project. Because his project is larger than what I needed for this project, I have copied his core database classes into the folder sqlitecpp/ in this project. Please always use his project here on GitHub directly for your own work.
+CppCDDB uses [SQLite3](http://sqlite.org) and [bzip2](http://www.bzip.org). It also uses the formidable C++ string formatting library [CppFormat](http://cppformat.github.io/latest/index.html) from Victor Zverovich. For networking, (Boost::)[ASIO](http://think-async.com/Asio/) is used (as standalone headers, Boost is not needed). And it uses Sébastien Rombauts's nice [SQLiteCpp](https://github.com/SRombauts/SQLiteCpp) C++ wrapper classes for SQLite - which helped to reduce greatly the implementation time for this project. Because his project is larger than what I needed for this project, I have copied his core database classes into the folder sqlitecpp/ in this project. Please always use his project here on GitHub directly for your own work.
 
 Thank you all for your valuable work!
 
